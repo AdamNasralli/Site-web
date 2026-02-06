@@ -1,0 +1,110 @@
+/* Réinitialisation simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page */
+body {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+/* En-tête */
+.header {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Section principale */
+.main {
+    padding: 15px;
+}
+
+/* Sections */
+.hero,
+.offre,
+.formulaire {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Titre */
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Offre */
+.offre ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.offre li {
+    margin-bottom: 5px;
+}
+
+/* Formulaire */
+.champ {
+    margin-bottom: 10px;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.champ input,
+.champ textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Bouton */
+button {
+    padding: 8px;
+    background-color: #555555;
+    color: white;
+    border: none;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive très basique */
+@media screen and (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
